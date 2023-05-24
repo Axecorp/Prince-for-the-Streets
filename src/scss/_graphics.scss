@@ -1,0 +1,36 @@
+.graphics{
+    position: fixed;
+    inset: 0;
+    z-index: 3;
+    .model{
+        position: absolute;
+        transition: 300ms;
+        top: 0;
+        opacity: 0;
+        left: 50%;
+        height: 100%;
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes btnEffect {
+    0% {
+        background-position: auto auto;
+        background-size: 100%;
+    }
+    100% {
+        background-size: 1000%;
+        background-position: top right;
+    }
+}
+@keyframes btnEffectReverse {
+    0% {
+
+        background-size: 1000%;
+        background-position: top right;
+    }
+    100% {
+        background-position: auto auto;
+        background-size: 100%;
+    }
+}
