@@ -9,10 +9,10 @@ $counter = 1;
         }
     }
 </style>
-<section class="section returns" id="section2" style="background-image: url(<?php echo ($block["background_image"]);?>);">
+<section class="section returns" id="section2" >
     
     <div class="inner">
-        <h2 class="heading"><?php echo $block["heading"];?></h2>
+        <!-- <h2 class="heading"><?php echo $block["heading"];?></h2> -->
         <div class="stats">
             <div class="top gradient-text">up to</div>
             <div class="numbers gradient-text"><?php echo $block["numbers"];?></div>

@@ -13,7 +13,12 @@
     background-position: center;
     padding: 0 30px;
     height: 100vh;
+    background-color:#fff;
     position: relative;
+    transition:background-color 0.3s ease-in;
+    &.active{
+        background-color:transparent;
+    }
     @media(max-width: 767px){
         height: auto !important;
     }

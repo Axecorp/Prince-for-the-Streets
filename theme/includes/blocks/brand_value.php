@@ -1,7 +1,7 @@
 <section class="section brand-value"  id="section4">
 
     <div class="inner">
-        <h2 class="heading"><?php echo $block["heading"];?></h2>
+        <!-- <h2 class="heading"><?php echo $block["heading"];?></h2> -->
         <div class="screen">
             <div class="dots">
                 <svg class="desktop" width="54" height="14" viewBox="0 0 54 14" fill="none" xmlns="http://www.w3.org/2000/svg">

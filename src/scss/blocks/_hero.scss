@@ -2,17 +2,52 @@
     overflow: hidden;
     // height: 100vh !important;
 }
-.logo{
+.site-logo{
     font-family: $inter;
     font-weight: 700;
     font-size: 42.5px;
-    line-height: 51px;
+    line-height: 117%;
     letter-spacing: 0.01em;
     color: #FFFFFF;
-    margin-top: 8px;
-    position: fixed;
-    margin-top: 180px;
-    z-index: 100;
+    transition: all .3s ease-in;
+    position:relative;
+    z-index:999;
+    text-align: center;
+    transform:translateY(-100px);
+    height:0;
+    
+    &.sticky{
+        position:fixed;
+        top:20px;
+        left:0;
+        right:0;
+        transform:translateY(0);
+        
+    }
+    &.black{
+        color:#000;
+    }
+    &.background-clip{
+        font-weight: 700;
+        font-size: 84.5px;
+        line-height: 102px;
+        background:url("/wp-content/uploads/2023/05/NightClubZoom.png");
+        -webkit-background-clip: text ;
+        background-clip: text ;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        height:auto;
+    }
+}
+.home-background{
+    position:fixed;
+    inset:0;
+    img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        object-position:center;
+    }
 }
 .hero{
     background-size: cover;
@@ -65,37 +100,38 @@
             display: block;
         }
     }
-    .button-m{
-        display: none;
-        align-items: center;
-        position: relative;
-        justify-content: center;
-        margin-top: 32px;
-        padding: 14px 32px 14px 24px;
-        img{
-            width: 30px;
-            height: 30px;
-            margin-right: 8px;
-        }
-        font-family: $inter;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
-        color: #FFFFFF;
-        background: linear-gradient(274.31deg, #4D44EF 5.99%, #3678E6 95.21%);
-        border-radius: 50px;
-        min-width: max-content;
-        animation: btnEffectReverse 0.3s ;
-        &:hover{
-            animation: btnEffect 0.3s forwards;
-        }
-        @media(max-width: 991px){
-            display: flex;
-        }
-    }
+    // .button-m{
+    //     display: none;
+    //     align-items: center;
+    //     position: relative;
+    //     justify-content: center;
+    //     margin-top: 32px;
+    //     padding: 14px 32px 14px 24px;
+    //     img{
+    //         width: 30px;
+    //         height: 30px;
+    //         margin-right: 8px;
+    //     }
+    //     font-family: $inter;
+    //     font-weight: 500;
+    //     font-size: 18px;
+    //     line-height: 22px;
+    //     color: #FFFFFF;
+    //     background: linear-gradient(274.31deg, #4D44EF 5.99%, #3678E6 95.21%);
+    //     border-radius: 50px;
+    //     min-width: max-content;
+    //     animation: btnEffectReverse 0.3s ;
+    //     &:hover{
+    //         animation: btnEffect 0.3s forwards;
+    //     }
+    //     @media(max-width: 991px){
+    //         display: flex;
+    //     }
+    // }
     .inner{
         position: relative;
         display: flex;
+        max-width:1200px;
         // padding-top: 180px;
         @media(max-width: 1400px){
             align-items: center;
@@ -160,7 +196,7 @@
         .card{
             min-width: 374px;
             width: 374px;
-            margin-right: 88px;
+            margin-right: 115px;
             height: 576px;
             border-radius: 20px;
             background-color: white;
@@ -264,18 +300,21 @@
             @media(max-width: 991px){
                 display: none;
             }
+            &.sticky{
+                .heading{
+                    opacity:0;
+                }
+            }
             .heading{
                 font-family: $inter;
                 font-weight: 700;
                 font-size: 42.5px;
-                line-height: 51px;
+                line-height: 117%;
                 letter-spacing: 0.01em;
                 color: #FFFFFF;
+                transition:opacity 0.3s ease-in;
                 margin-bottom: 8px;
-                &.active{
-                    position: fixed;
-                    top: 40px;
-                }
+               
             }
             .tagline{
                 font-family: $lato;
@@ -315,11 +354,6 @@
                     justify-content: center;
                     z-index: 5;
                     padding: 14px 32px 14px 24px;
-                    img{
-                        width: 30px;
-                        height: 30px;
-                        margin-right: 8px;
-                    }
                     font-family: $inter;
                     font-weight: 500;
                     font-size: 18px;
@@ -327,10 +361,16 @@
                     color: #FFFFFF;
                     background: linear-gradient(274.31deg, #4D44EF 5.99%, #3678E6 95.21%);
                     border-radius: 50px;
-                    min-width: max-content;
+                    min-width: 300px;
                     animation: btnEffectReverse 0.3s forwards;
+                    
                     &:hover{
                         animation: btnEffect 0.3s forwards;
+                    }
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 8px;
                     }
                 }
                 .description{

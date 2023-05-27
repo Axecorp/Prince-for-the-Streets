@@ -6,10 +6,10 @@
         }
     }
 </style>
-<section class="section conversion" id="section3"  style="background-image: url(<?php echo ($block["background_image"]);?>);">
+<section class="section conversion" id="section3" >
 
     <div class="inner">
-        <h2 class="heading"><?php echo $block["heading"];?></h2>
+        <!-- <h2 class="heading"><?php echo $block["heading"];?></h2> -->
         <div class="stats">
             <div class="top gradient-tex">up to</div>
             <div class="numbers gradient-tex"><?php echo $block["numbers"];?></div>

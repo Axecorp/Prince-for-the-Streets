@@ -1,9 +1,9 @@
 <section class="section shopify" id="section5" >
     <!-- <img src="<?php echo $block["made_for_shopify_tag"]?>" alt="" class="shopify-tag"> -->
     <div class="inner">
-        <div class="heading" style="background: url(<?php echo $block["heading_background"]?>);">
+        <!-- <div class="heading" style="background: url(<?php echo $block["heading_background"]?>);">
             <?php echo $block["heading"];?>
-        </div>
+        </div> -->
         <div class="content">
             <div class="left">
                 <div class="subheading">

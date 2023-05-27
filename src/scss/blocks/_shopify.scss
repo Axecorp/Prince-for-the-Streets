@@ -1,31 +1,25 @@
 .shopify{
     padding: 0 30px;
+    padding-top:100px;
     // height: 100vh;
+    background-color:#fff;
     position: relative;
     .shopify-tag{
         position: absolute;
         top: 25%;
         left: 0;
-        @media(max-width: 991px){
-            top: 60px;
-        }
-        @media(max-width: 600px){
-            display: none;
-        }
+        
     }
     .shopify-tag-m{
         display: none;
         position: absolute;
         top: 160px;
         right: 0;
-        @media(max-width: 600px){
-            display: block;
-        }
     }
     .inner{
         max-width: 740px;
         height: 100%;
-        padding: 40px 0;
+        padding: 40px 0px;
         padding-bottom: 100px;
         display: flex;
         flex-direction: column;
@@ -44,26 +38,6 @@
             -webkit-text-fill-color: transparent;
             margin-bottom: 60px;
             white-space: nowrap;
-            @media (max-width: 567px) {
-                background:transparent;
-                color: black;
-                -webkit-text-fill-color: black;
-                background-clip:unset;
-                font-size: 15px;
-                align-self: flex-start;
-                position: relative;
-                line-height: 2.5 ;
-                margin-bottom: 80px;
-                &::after{
-                    position: absolute;
-                    content: "";
-                    bottom: 0;
-                    width: 500px;
-                    left: -30px;
-                    height: 1px;
-                    background-color: rgba(0, 0, 0, 0.2);
-                }
-            }
         }
         .content{
             display: flex;
@@ -71,9 +45,6 @@
             margin-bottom: 35px;
             position: relative;
             z-index: 5;
-            @media(max-width: 767px){
-                flex-direction: column;
-            }
             .left{
                 width: 47.2%;
                 padding-right: 50px;
@@ -92,11 +63,7 @@
                     line-height: 17px;
                     color: rgba(0, 0, 0, 0.5);
                 }
-                @media(max-width: 767px){
-                    // padding-right: 0px;
-                    width: 100%;
-                    margin-bottom: 80px;
-                }
+                
                 .subheading{
                     font-family: $lato;
                     font-weight: 900;
@@ -112,10 +79,7 @@
                     mix-blend-mode: multiply;
                     margin-bottom: 17px;
 
-                    @media(max-width: 767px){
-                        font-size: 30px;
-                        line-height: 38px;
-                    }
+                 
                 }
                 .smallprints-shopify{
                     display: flex;
@@ -123,9 +87,7 @@
                     margin-bottom: 26px;
                     width: 100%;
                     .smallprint-shopify{
-                        @media(max-width: 400px){
-                            width: 60px;
-                        }
+                        
                     }
                     .smallprint-shopify img{
                         transition: 200ms ease-in;
@@ -159,16 +121,7 @@
             .right{
                 width: 52.8%;
                 position: relative;
-                @media(max-width: 767px){
-                    height: 500px;
-                    width: 100%;
-                    margin-bottom: 50px;
-                }
-                @media(max-width: 567px){
-                    height: 350px;
-                    width: 100%;
-                    margin-bottom: 50px;
-                }
+                
                 .media-item-shopify{
                     position: absolute;
                     top: 0;
@@ -178,11 +131,7 @@
                     display: none;
                     border-radius: 24px;
                     overflow: hidden;
-                    @media(max-width: 767px){
-                        inset: 0;
-                        border-radius: 0;
-                        scale: 1.2;
-                    }
+                    
                     &:first-child{
                         display: block;
                     }
@@ -217,13 +166,7 @@
                             width: max-content;
                             transition: 300ms ease;
                             box-shadow: 0px 0px 31px rgba(255, 255, 255, 0.55);
-                            @media(max-width: 767px){
-                                position: static;
-                                margin: 0 auto;
-                                margin-top: 65%;
-                                transform: translateX(0);
-                                scale: 0.8;
-                            }
+                            
                             &:hover{
                                 transition: 300ms ease;
                                 padding: 12px 70px;
@@ -284,9 +227,7 @@
                 font-size: 14px;
                 line-height: 17px;
                 color: rgba(0, 0, 0, 0.5);
-                @media(max-width: 567px){
-                    margin-bottom: 120px;
-                }
+                
             }
             .about-description{
                 font-family: $inter;
@@ -296,10 +237,7 @@
                 line-height: 25px;
                 letter-spacing: 0.06em;
                 color: #000000;
-                @media(max-width: 567px){
-                    font-size: 14px;
-                    line-height: 17px;
-                }
+               
             }
         }
         .button{
